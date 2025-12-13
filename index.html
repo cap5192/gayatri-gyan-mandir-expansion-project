@@ -15,7 +15,7 @@
     <nav class="navbar">
         <div class="nav-container">
             <a href="#" class="nav-logo">
-                <span class="logo-icon">ॐ</span>
+                <img src="images/logo.png" alt="Gayatri Gyan Mandir Logo" class="logo-img">
                 <span class="logo-text">Gayatri Gyan Mandir</span>
             </a>
             <ul class="nav-links">
@@ -24,7 +24,7 @@
                 <li><a href="#project">Expansion</a></li>
                 <li><a href="#contribute">Contribute</a></li>
             </ul>
-            <a href="#contribute" class="nav-cta">Donate Now</a>
+            <a href="https://www.paypal.com/donate?token=_zTrg9-HLNp1M-_L8STgDKP7t6oAakWmMdWfUIEXbMJq77jQx-ne7dW57HMSZskdmIXgT_oEkcPoq27w" target="_blank" rel="noopener" class="nav-cta">Donate Now</a>
             <button class="mobile-menu-btn" aria-label="Toggle menu">
                 <span></span>
                 <span></span>
@@ -35,52 +35,103 @@
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-bg">
-            <div class="gradient-orb orb-1"></div>
-            <div class="gradient-orb orb-2"></div>
-            <div class="gradient-orb orb-3"></div>
-            <div class="flame-container">
-                <div class="flame"></div>
-                <div class="flame flame-2"></div>
-                <div class="flame flame-3"></div>
+        <div class="hero-container">
+            <!-- Temple Illustration -->
+            <div class="hero-visual">
+                <svg class="temple-illustration" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <!-- Gradient for fade from bottom up -->
+                        <linearGradient id="fadeUp" x1="0%" y1="100%" x2="0%" y2="0%">
+                            <stop offset="0%" stop-color="white" stop-opacity="0"/>
+                            <stop offset="40%" stop-color="white" stop-opacity="1"/>
+                        </linearGradient>
+                        <mask id="fadeMask">
+                            <rect x="0" y="0" width="400" height="300" fill="url(#fadeUp)"/>
+                        </mask>
+                    </defs>
+                    <g mask="url(#fadeMask)">
+                        <!-- Temple Base -->
+                        <rect x="100" y="220" width="200" height="60" fill="#E55A1F" rx="4"/>
+                        <!-- Temple Steps -->
+                        <rect x="80" y="260" width="240" height="20" fill="#FF6B2C" rx="2"/>
+                        <rect x="60" y="270" width="280" height="15" fill="#FF8F5C" rx="2"/>
+                        <!-- Main Temple Body -->
+                        <rect x="120" y="120" width="160" height="100" fill="#E55A1F" rx="4"/>
+                        <!-- Temple Pillars -->
+                        <rect x="130" y="140" width="15" height="80" fill="#FF6B2C" rx="2"/>
+                        <rect x="160" y="140" width="15" height="80" fill="#FF6B2C" rx="2"/>
+                        <rect x="225" y="140" width="15" height="80" fill="#FF6B2C" rx="2"/>
+                        <rect x="255" y="140" width="15" height="80" fill="#FF6B2C" rx="2"/>
+                        <!-- Temple Door -->
+                        <rect x="175" y="160" width="50" height="60" fill="#FFB347" rx="4"/>
+                        <circle cx="200" cy="190" r="4" fill="#FCD34D"/>
+                        <!-- Temple Dome/Shikhara -->
+                        <path d="M200 20 L260 120 L140 120 Z" fill="#E55A1F"/>
+                        <path d="M200 40 L245 110 L155 110 Z" fill="#FF6B2C"/>
+                        <!-- Kalash (top) -->
+                        <ellipse cx="200" cy="25" rx="10" ry="8" fill="#FFD700"/>
+                        <rect x="197" y="12" width="6" height="13" fill="#FFD700"/>
+                        <circle cx="200" cy="8" r="5" fill="#FFD700"/>
+                        <!-- Om Symbol -->
+                        <text x="200" y="95" text-anchor="middle" fill="#FFD700" font-size="24" font-family="serif">ॐ</text>
+                        <!-- Decorative flags -->
+                        <path d="M140 120 L130 100 L145 105 Z" fill="#DC2626"/>
+                        <path d="M260 120 L270 100 L255 105 Z" fill="#F97316"/>
+                        <!-- Diyas (oil lamps) -->
+                        <ellipse cx="90" cy="255" rx="12" ry="6" fill="#FFD700"/>
+                        <path d="M90 250 Q95 240 90 235 Q85 240 90 250" fill="#FCD34D"/>
+                        <ellipse cx="310" cy="255" rx="12" ry="6" fill="#FFD700"/>
+                        <path d="M310 250 Q315 240 310 235 Q305 240 310 250" fill="#FCD34D"/>
+                    </g>
+                </svg>
             </div>
-        </div>
-        <div class="hero-content">
-            <p class="hero-tagline">Itasca, Illinois</p>
-            <h1 class="hero-title">
-                <span class="title-line muted">Building a temple is easy.</span>
-                <span class="title-line highlight">Building a legacy is sacred.</span>
-            </h1>
-            <p class="hero-description">
-                Join us in creating a sanctuary for spiritual growth, community service, and the preservation of divine Indian culture. Together, we build not just a temple, but a legacy.
-            </p>
-            <div class="hero-stats">
-                <div class="stat">
-                    <span class="stat-number">16,000</span>
-                    <span class="stat-label">Sq. Ft.</span>
+
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="title-line">Building a Sacred Space</span>
+                    <span class="title-line highlight highlight-circle">
+                        For Generations to Come
+                        <svg class="hand-drawn-circle" viewBox="0 0 500 100" preserveAspectRatio="none">
+                            <path class="circle-path" d="M 480,68
+                                Q 50,90 20,50
+                                Q 15,15 250,10
+                                Q 485,12 490,50
+                                Q 488,75 460,38"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2.5"
+                                stroke-linecap="round"/>
+                        </svg>
+                    </span>
+                </h1>
+                <p class="hero-description">
+                    Join us in creating a sanctuary for spiritual growth, community service, and the preservation of divine Indian culture. Together, we build not just a temple, but a legacy.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">16,000</span>
+                        <span class="stat-label">Sq. Ft.</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">260</span>
+                        <span class="stat-label">Capacity</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">5x</span>
+                        <span class="stat-label">Larger</span>
+                    </div>
                 </div>
-                <div class="stat">
-                    <span class="stat-number">260</span>
-                    <span class="stat-label">Capacity</span>
+                <div class="hero-cta">
+                    <a href="https://www.paypal.com/donate?token=_zTrg9-HLNp1M-_L8STgDKP7t6oAakWmMdWfUIEXbMJq77jQx-ne7dW57HMSZskdmIXgT_oEkcPoq27w" target="_blank" rel="noopener" class="btn btn-primary">
+                        <span>Support This Vision</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                    <a href="#project" class="btn btn-secondary">Learn More</a>
                 </div>
-                <div class="stat">
-                    <span class="stat-number">5x</span>
-                    <span class="stat-label">Larger</span>
-                </div>
+                <p class="hero-note">Tax-deductible • Part of World Gayatri Pariwar • Itasca, Illinois</p>
             </div>
-            <div class="hero-cta">
-                <a href="#contribute" class="btn btn-primary">
-                    <span>Support This Vision</span>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M5 12h14M12 5l7 7-7 7"/>
-                    </svg>
-                </a>
-                <a href="#project" class="btn btn-secondary">Learn More</a>
-            </div>
-        </div>
-        <div class="scroll-indicator">
-            <span>Scroll to explore</span>
-            <div class="scroll-arrow"></div>
         </div>
     </section>
 
@@ -322,41 +373,27 @@
 
                 <div class="donate-card">
                     <div class="donate-card-glow"></div>
+                    <div class="donate-card-icon">🙏</div>
                     <h3>Make a Donation</h3>
-                    <div class="donation-amounts">
-                        <button class="amount-btn" data-amount="21">$21</button>
-                        <button class="amount-btn" data-amount="51">$51</button>
-                        <button class="amount-btn" data-amount="101">$101</button>
-                        <button class="amount-btn" data-amount="251">$251</button>
-                        <button class="amount-btn" data-amount="501">$501</button>
-                        <button class="amount-btn" data-amount="1001">$1,001</button>
-                    </div>
-                    <div class="custom-amount">
-                        <label for="custom-donation">Or enter custom amount</label>
-                        <div class="input-wrapper">
-                            <span class="currency">$</span>
-                            <input type="number" id="custom-donation" placeholder="Enter amount">
+                    <p class="donate-card-text">Your contribution helps build a sacred space for spiritual growth and community service.</p>
+
+                    <div class="suggested-amounts">
+                        <p class="suggested-label">Suggested monthly pledges:</p>
+                        <div class="amount-tags">
+                            <span class="amount-tag">$21</span>
+                            <span class="amount-tag">$51</span>
+                            <span class="amount-tag">$101</span>
+                            <span class="amount-tag">$251</span>
                         </div>
                     </div>
-                    <div class="donation-type">
-                        <label class="radio-label">
-                            <input type="radio" name="donation-type" value="one-time" checked>
-                            <span class="radio-custom"></span>
-                            One-time
-                        </label>
-                        <label class="radio-label">
-                            <input type="radio" name="donation-type" value="monthly">
-                            <span class="radio-custom"></span>
-                            Monthly
-                        </label>
-                    </div>
-                    <button class="donate-btn">
-                        <span>Donate Now</span>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+
+                    <a href="https://www.paypal.com/donate?token=_zTrg9-HLNp1M-_L8STgDKP7t6oAakWmMdWfUIEXbMJq77jQx-ne7dW57HMSZskdmIXgT_oEkcPoq27w" target="_blank" rel="noopener" class="donate-btn">
+                        <svg class="paypal-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M7.076 21.337H2.47a.641.641 0 0 1-.633-.74L4.944.901C5.026.382 5.474 0 5.998 0h7.46c2.57 0 4.578.543 5.69 1.81 1.01 1.15 1.304 2.42 1.012 4.287-.023.143-.047.288-.077.437-.983 5.05-4.349 6.797-8.647 6.797h-2.19c-.524 0-.968.382-1.05.9l-1.12 7.106zm14.146-14.42a3.35 3.35 0 0 0-.607-.541c-.013.076-.026.175-.041.254-.93 4.778-4.005 7.201-9.138 7.201h-2.19a.563.563 0 0 0-.556.479l-1.187 7.527h-.506l-.24 1.516a.56.56 0 0 0 .554.647h3.882c.46 0 .85-.334.922-.788.06-.26.76-4.852.816-5.09a.932.932 0 0 1 .923-.788h.58c3.76 0 6.705-1.528 7.565-5.946.36-1.847.174-3.388-.777-4.471z"/>
                         </svg>
-                    </button>
-                    <p class="donate-note">Tax-deductible donation. You'll receive a receipt.</p>
+                        <span>Donate with PayPal</span>
+                    </a>
+                    <p class="donate-note">Secure payment via PayPal. Tax-deductible donation.</p>
                 </div>
             </div>
         </div>
@@ -368,7 +405,7 @@
             <div class="footer-content">
                 <div class="footer-main">
                     <div class="footer-logo">
-                        <span class="logo-icon">ॐ</span>
+                        <img src="images/logo.png" alt="Gayatri Gyan Mandir Logo" class="logo-img footer-logo-img">
                         <span class="logo-text">Gayatri Gyan Mandir</span>
                     </div>
                     <p class="footer-tagline">A sacred space for spiritual growth and community service in Itasca, Illinois.</p>
