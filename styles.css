@@ -368,13 +368,22 @@ img {
 }
 
 .hero-title {
-    font-size: clamp(2.5rem, 6vw, 4.5rem);
-    margin-bottom: var(--space-lg);
+    font-size: clamp(3rem, 8vw, 5.5rem);
+    margin-bottom: var(--space-xl);
     animation: fadeInUp 0.8s ease-out 0.1s both;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
 }
 
 .title-line {
     display: block;
+    font-weight: 700;
+}
+
+.title-line.muted {
+    color: var(--gray-400);
+    font-weight: 500;
+    margin-bottom: 0.1em;
 }
 
 .title-line.highlight {
@@ -382,6 +391,8 @@ img {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    font-weight: 700;
+    text-shadow: 0 0 80px rgba(255, 107, 44, 0.3);
 }
 
 .hero-description {
@@ -1278,6 +1289,14 @@ img {
 
     .hero {
         padding: var(--space-4xl) var(--space-md);
+    }
+
+    .hero-title {
+        font-size: clamp(2rem, 10vw, 3rem);
+    }
+
+    .title-line.muted {
+        font-size: 0.85em;
     }
 
     .hero-stats {
