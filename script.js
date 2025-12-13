@@ -6,7 +6,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize all components
     initNavbar();
-    initDonationForm();
+    // initDonationForm(); // Removed - donate button links directly to donation page
     initScrollReveal();
     initSmoothScroll();
     initMobileMenu();
@@ -129,63 +129,7 @@ function initMobileMenu() {
     }
 }
 
-/**
- * Donation form interactivity
- */
-function initDonationForm() {
-    const amountBtns = document.querySelectorAll('.amount-btn');
-    const customInput = document.getElementById('custom-donation');
-    const donateBtn = document.querySelector('.donate-btn');
-    let selectedAmount = null;
-
-    // Amount button selection
-    amountBtns.forEach(btn => {
-        btn.addEventListener('click', () => {
-            // Remove active class from all
-            amountBtns.forEach(b => b.classList.remove('active'));
-            // Add to clicked
-            btn.classList.add('active');
-            selectedAmount = btn.dataset.amount;
-            // Clear custom input
-            if (customInput) {
-                customInput.value = '';
-            }
-        });
-    });
-
-    // Custom amount input
-    if (customInput) {
-        customInput.addEventListener('input', () => {
-            amountBtns.forEach(b => b.classList.remove('active'));
-            selectedAmount = customInput.value;
-        });
-
-        customInput.addEventListener('focus', () => {
-            amountBtns.forEach(b => b.classList.remove('active'));
-        });
-    }
-
-    // Donate button click
-    if (donateBtn) {
-        donateBtn.addEventListener('click', (e) => {
-            e.preventDefault();
-
-            const amount = customInput?.value || selectedAmount;
-            const donationType = document.querySelector('input[name="donation-type"]:checked')?.value || 'one-time';
-
-            if (!amount || amount <= 0) {
-                showNotification('Please select or enter a donation amount', 'warning');
-                return;
-            }
-
-            // Show success message (in production, this would integrate with payment gateway)
-            showNotification(`Thank you! Preparing ${donationType} donation of $${amount}...`, 'success');
-
-            // Here you would typically redirect to a payment processor
-            // window.location.href = `https://payment-gateway.com/donate?amount=${amount}&type=${donationType}`;
-        });
-    }
-}
+// Donation form functionality removed - donate button links directly to donation page
 
 /**
  * Show notification
