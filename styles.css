@@ -721,7 +721,31 @@ img {
    Project Section
    =================================== */
 .project {
-    background: var(--gray-50);
+    background: linear-gradient(180deg, #FFF7ED 0%, #FFEDD5 50%, #FFF7ED 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.project::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--saffron) 0%, var(--gold) 50%, var(--saffron) 100%);
+}
+
+.project .section-header {
+    position: relative;
+}
+
+.project .section-title {
+    font-size: clamp(2rem, 4vw, 3rem);
+    background: linear-gradient(135deg, var(--gray-900) 0%, var(--saffron-dark) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .timeline {
@@ -744,7 +768,7 @@ img {
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    background: var(--gray-300);
+    background: var(--gold);
     border: 3px solid var(--white);
     box-shadow: var(--shadow-sm);
     position: relative;
@@ -752,8 +776,8 @@ img {
 }
 
 .timeline-marker.active {
-    background: var(--gray-900);
-    animation: none;
+    background: var(--saffron);
+    animation: pulse 2s infinite;
 }
 
 @keyframes pulse {
@@ -763,9 +787,10 @@ img {
 
 .timeline-line {
     width: 80px;
-    height: 2px;
-    background: var(--gray-200);
+    height: 3px;
+    background: linear-gradient(90deg, var(--saffron) 0%, var(--gold) 100%);
     margin: 0 var(--space-sm);
+    border-radius: 2px;
 }
 
 .timeline-content {
@@ -826,9 +851,10 @@ img {
 .building-stat {
     text-align: center;
     padding: var(--space-md) var(--space-lg);
-    background: var(--gray-50);
+    background: var(--white);
     border-radius: var(--radius-md);
-    border: 1px solid var(--gray-200);
+    border: 2px solid var(--saffron);
+    box-shadow: 0 4px 15px rgba(255, 107, 44, 0.1);
 }
 
 .stat-value {
@@ -836,7 +862,7 @@ img {
     font-family: var(--font-display);
     font-size: 2rem;
     font-weight: 700;
-    color: var(--gray-900);
+    color: var(--saffron);
 }
 
 .stat-desc {
