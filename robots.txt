@@ -1,0 +1,8 @@
+# Robots.txt for Gayatri Gyan Mandir Expansion Project
+# https://ggmexpansion.org
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://ggmexpansion.org/sitemap.xml
