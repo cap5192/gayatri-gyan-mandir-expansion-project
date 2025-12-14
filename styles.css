@@ -597,14 +597,23 @@ img {
 }
 
 .founder-circle {
-    width: 56px;
-    height: 56px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
-    background: var(--gray-800);
-    border: 2px solid var(--gray-600);
+    background: var(--gray-100);
+    border: 3px solid var(--saffron);
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.founder-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
 }
 
 .founder-initial {
@@ -1051,6 +1060,61 @@ img {
     margin-top: var(--space-sm);
 }
 
+/* Pledge Section */
+.pledge-section {
+    padding: var(--space-xl) 0;
+    background: var(--saffron);
+}
+
+.pledge-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-xl);
+}
+
+.pledge-banner-content {
+    display: flex;
+    align-items: center;
+    gap: var(--space-lg);
+}
+
+.pledge-banner-icon {
+    font-size: 2.5rem;
+    flex-shrink: 0;
+}
+
+.pledge-banner-text h3 {
+    font-size: 1.25rem;
+    color: var(--white);
+    margin-bottom: var(--space-xs);
+}
+
+.pledge-banner-text p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.9rem;
+    line-height: 1.5;
+    max-width: 500px;
+}
+
+.pledge-banner-btn {
+    flex-shrink: 0;
+    padding: var(--space-md) var(--space-xl);
+    background: var(--white);
+    color: var(--saffron-dark);
+    font-family: var(--font-body);
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: var(--radius-md);
+    text-decoration: none;
+    transition: var(--transition-base);
+}
+
+.pledge-banner-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
 /* ===================================
    Footer
    =================================== */
@@ -1271,6 +1335,23 @@ img {
 
     .donation-amounts {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .pledge-banner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .pledge-banner-content {
+        flex-direction: column;
+    }
+
+    .pledge-banner-text h3 {
+        font-size: 1.1rem;
+    }
+
+    .pledge-banner-text p {
+        font-size: 0.85rem;
     }
 
     .footer-content {
