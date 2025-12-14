@@ -1086,6 +1086,14 @@ img {
     margin-top: var(--space-sm);
 }
 
+.tax-info {
+    text-align: center;
+    font-size: 0.65rem;
+    color: var(--gray-400);
+    margin-top: var(--space-sm);
+    line-height: 1.4;
+}
+
 /* Pledge Section */
 .pledge-section {
     padding: var(--space-xl) 0;
@@ -1231,6 +1239,12 @@ img {
 .blessing {
     margin-top: var(--space-sm);
     color: var(--gray-500);
+}
+
+.tax-exempt {
+    font-size: 0.75rem;
+    color: var(--gray-400);
+    margin-top: var(--space-xs);
 }
 
 /* ===================================
