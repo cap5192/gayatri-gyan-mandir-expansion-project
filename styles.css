@@ -1316,6 +1316,12 @@ img {
         justify-content: center;
     }
 
+    .hero-visual {
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+    }
+
     .temple-illustration {
         width: 220px;
     }
