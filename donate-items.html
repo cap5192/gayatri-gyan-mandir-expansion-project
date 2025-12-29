@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate for Temple Items | Gayatri Gyan Mandir Expansion</title>
+    <meta name="description" content="Support the Gayatri Gyan Mandir expansion by donating for specific temple items. Choose items like bells, diyas, kitchen equipment, and more.">
+    <meta name="keywords" content="Gayatri Gyan Mandir, temple donation, donate items, Hindu temple, All World Gayatri Pariwar, sponsor temple items">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://ggmexpansion.org/donate-items.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ggmexpansion.org/donate-items.html">
+    <meta property="og:title" content="Donate for Temple Items | Gayatri Gyan Mandir">
+    <meta property="og:description" content="Support the temple expansion by sponsoring specific items. Every contribution brings us closer to our sacred vision.">
+    <meta property="og:image" content="https://ggmexpansion.org/images/logo.png">
+    <meta property="og:site_name" content="Gayatri Gyan Mandir">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://ggmexpansion.org/donate-items.html">
+    <meta name="twitter:title" content="Donate for Temple Items | Gayatri Gyan Mandir">
+    <meta name="twitter:description" content="Support the temple expansion by sponsoring specific items. Every contribution brings us closer to our sacred vision.">
+    <meta name="twitter:image" content="https://ggmexpansion.org/images/logo.png">
+
+    <!-- Additional SEO -->
+    <meta name="author" content="Gayatri Gyan Mandir">
+    <meta name="robots" content="index, follow">
+
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://docs.google.com https://sheets.googleapis.com; base-uri 'self'; form-action 'self' https://docs.google.com https://app.gayatrigyanmandir.org;">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="apple-touch-icon" href="images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="images/logo.png" alt="Gayatri Gyan Mandir Logo" class="logo-img">
+                <span class="logo-text">Gayatri Gyan Mandir</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#mission">Mission</a></li>
+                <li><a href="index.html#project">Expansion</a></li>
+                <li><a href="index.html#contribute">Contribute</a></li>
+                <li><a href="donate-items.html" class="active">Donate Items</a></li>
+            </ul>
+            <a href="https://app.gayatrigyanmandir.org/donate/index" target="_blank" rel="noopener noreferrer" class="nav-cta">Donate Now</a>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero hero-small">
+        <div class="hero-container">
+            <div class="hero-content hero-content-centered">
+                <span class="section-tag">Support the Temple</span>
+                <h1 class="hero-title">
+                    <span class="title-line">Sponsor Temple Items</span>
+                    <span class="title-line highlight">Leave Your Sacred Mark</span>
+                </h1>
+                <p class="hero-description">
+                    Choose specific items for the new temple and make a lasting contribution.
+                    Each item you sponsor becomes part of our sacred space, blessing devotees for generations.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="section filter-section">
+        <div class="container">
+            <div class="filter-bar">
+                <button class="filter-btn active" data-category="all">All Items</button>
+                <button class="filter-btn" data-category="mandir">Mandir Hall</button>
+                <button class="filter-btn" data-category="kitchen">Kitchen</button>
+                <button class="filter-btn" data-category="infrastructure">Infrastructure</button>
+                <button class="filter-btn" data-category="furniture">Furniture</button>
+                <button class="filter-btn" data-category="outdoor">Outdoor</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donation Items Grid -->
+    <section class="section items-section">
+        <div class="container">
+            <div class="items-loading" id="items-loading">
+                <div class="loading-spinner"></div>
+                <p>Loading items...</p>
+            </div>
+            <div class="items-grid" id="items-grid">
+                <!-- Items will be loaded dynamically via JavaScript -->
+            </div>
+            <div class="items-empty" id="items-empty" style="display: none;">
+                <p>No items found in this category.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="section how-it-works">
+        <div class="container">
+            <div class="section-header center">
+                <span class="section-tag">Simple Process</span>
+                <h2 class="section-title">How It Works</h2>
+            </div>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3>Choose an Item</h3>
+                    <p>Browse the list and select an item you'd like to sponsor for the temple.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3>Submit Commitment</h3>
+                    <p>Fill out a short form with your details and commitment to donate.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3>Complete Donation</h3>
+                    <p>Our team will contact you to complete the donation process.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta-section">
+        <div class="container">
+            <div class="cta-card">
+                <div class="cta-content">
+                    <h2>Don't See What You're Looking For?</h2>
+                    <p>Make a general donation to support the temple expansion project, or contact us to discuss other sponsorship opportunities.</p>
+                    <div class="cta-buttons">
+                        <a href="https://app.gayatrigyanmandir.org/donate/index" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                            <span>General Donation</span>
+                        </a>
+                        <a href="https://gayatrigyanmandir.org/contact/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <div class="footer-logo">
+                        <img src="images/logo.png" alt="Gayatri Gyan Mandir Logo" class="logo-img footer-logo-img">
+                        <span class="logo-text">Gayatri Gyan Mandir</span>
+                    </div>
+                    <p class="footer-tagline">A sacred space for spiritual growth and community service in Itasca, Illinois.</p>
+                    <p class="footer-address">Itasca, IL • Part of All World Gayatri Pariwar</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="index.html#about">About Us</a></li>
+                            <li><a href="index.html#mission">Our Mission</a></li>
+                            <li><a href="index.html#project">Expansion Project</a></li>
+                            <li><a href="index.html#contribute">Contribute</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="privacy.html">Privacy Policy</a></li>
+                            <li><a href="terms.html">Terms of Use</a></li>
+                            <li><a href="https://gayatrigyanmandir.org/contact/" target="_blank" rel="noopener noreferrer">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Gayatri Gyan Mandir, Itasca IL. All rights reserved.</p>
+                <p class="tax-exempt">501(c)(3) Tax-Exempt Organization | EIN: 36-4228448</p>
+                <p class="blessing">🙏 May the divine light guide your path 🙏</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="donate-items.js"></script>
+</body>
+</html>
