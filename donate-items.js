@@ -8,7 +8,7 @@
 // ===========================================
 
 // Replace with your published Google Sheet CSV URL (see setup instructions)
-const GOOGLE_SHEET_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRpmjgjJDLVIyT5NdckHNCX3zFlS1O2Tlt4-DBqntWGM5B_d-NjNeppXWmiZimzgCXUKcxLR9PJwV8x/pub?output=csv';
+const GOOGLE_SHEET_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRpmjgjJDLVIyT5NdckHNCX3zFlS1O2Tlt4-DBqntWGM5B_d-NjNeppXWmiZimzgCXUKcxLR9PJwV8x/pub?gid=0&single=true&output=csv';
 
 // Replace with your Google Form URL for commitments
 // Add ?usp=pp_url&entry.XXXXXX= to pre-fill the item name
