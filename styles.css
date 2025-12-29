@@ -1589,6 +1589,8 @@ img {
 /* Item Card */
 .item-card {
     position: relative;
+    display: flex;
+    flex-direction: column;
     background: var(--white);
     border-radius: var(--radius-lg);
     border: 1px solid var(--gray-200);
@@ -1596,6 +1598,7 @@ img {
     transition: var(--transition-base);
     opacity: 0;
     transform: translateY(20px);
+    overflow: hidden;
 }
 
 .item-card.revealed {
@@ -1616,7 +1619,7 @@ img {
 .item-content {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    flex: 1;
 }
 
 .item-name {
