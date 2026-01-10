@@ -4,7 +4,7 @@ A fundraising and information website for the Gayatri Gyan Mandir temple expansi
 
 ## About
 
-Gayatri Gyan Mandir is a spiritual center founded on the teachings of Pandit Shriram Sharma Acharya and Mata Bhagwati Devi. This website supports the temple's expansion campaign to build a new 16,000 sq. ft. facility with capacity for 260 people.
+Gayatri Gyan Mandir is a spiritual center founded on the teachings of Pandit Shriram Sharma Acharya and Mata Bhagwati Devi. This website supports the temple's expansion campaign to build a new 24,000 sq. ft. facility with capacity for 260 people.
 
 Part of the worldwide [All World Gayatri Pariwar](https://www.awgp.org/) family.
 
