@@ -3,184 +3,524 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gayatri Gyan Mandir | Under Maintenance</title>
-    <meta name="description" content="Gayatri Gyan Mandir website is currently under maintenance. We'll be back soon.">
-    <meta name="robots" content="noindex, nofollow">
+    <title>Gayatri Gyan Mandir | Expansion Project - Itasca, IL</title>
+    <meta name="description" content="Join us in building a sacred space for spiritual growth, community service, and divine Indian culture. Gayatri Gyan Mandir expansion project in Itasca, IL.">
+    <meta name="keywords" content="Gayatri Gyan Mandir, temple expansion, Itasca IL, Hindu temple, All World Gayatri Pariwar, spiritual center, Gayatri Mantra, donation, community service, Indian culture">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://ggmexpansion.org/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ggmexpansion.org/">
+    <meta property="og:title" content="Gayatri Gyan Mandir | Expansion Project - Itasca, IL">
+    <meta property="og:description" content="Join us in building a sacred space for spiritual growth, community service, and divine Indian culture. Support our 16,000 sq. ft. temple expansion.">
+    <meta property="og:image" content="https://ggmexpansion.org/images/logo.png">
+    <meta property="og:site_name" content="Gayatri Gyan Mandir">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://ggmexpansion.org/">
+    <meta name="twitter:title" content="Gayatri Gyan Mandir | Expansion Project - Itasca, IL">
+    <meta name="twitter:description" content="Join us in building a sacred space for spiritual growth, community service, and divine Indian culture. Support our 16,000 sq. ft. temple expansion.">
+    <meta name="twitter:image" content="https://ggmexpansion.org/images/logo.png">
+
+    <!-- Additional SEO -->
+    <meta name="author" content="Gayatri Gyan Mandir">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; base-uri 'self'; form-action 'self' https://docs.google.com https://app.gayatrigyanmandir.org;">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
     <link rel="icon" type="image/png" href="images/logo.png">
     <link rel="apple-touch-icon" href="images/logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 
-        body {
-            font-family: 'Inter', sans-serif;
-            background: linear-gradient(135deg, #FFF7ED 0%, #FFEDD5 50%, #FED7AA 100%);
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-        }
-
-        .maintenance-container {
-            text-align: center;
-            max-width: 600px;
-            padding: 60px 40px;
-            background: rgba(255, 255, 255, 0.9);
-            border-radius: 24px;
-            box-shadow: 0 25px 50px -12px rgba(234, 88, 12, 0.15);
-            border: 1px solid rgba(234, 88, 12, 0.1);
-        }
-
-        .logo {
-            width: 120px;
-            height: 120px;
-            margin: 0 auto 30px;
-            border-radius: 50%;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(234, 88, 12, 0.2);
-        }
-
-        .logo img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .title {
-            font-family: 'Playfair Display', serif;
-            font-size: 2rem;
-            color: #EA580C;
-            margin-bottom: 10px;
-            font-weight: 600;
-        }
-
-        .subtitle {
-            font-size: 1.1rem;
-            color: #9A3412;
-            margin-bottom: 40px;
-            font-weight: 500;
-        }
-
-        .icon-container {
-            margin-bottom: 30px;
-        }
-
-        .icon-container svg {
-            width: 80px;
-            height: 80px;
-            color: #F97316;
-        }
-
-        .message {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.75rem;
-            color: #1F2937;
-            margin-bottom: 20px;
-            line-height: 1.4;
-        }
-
-        .description {
-            font-size: 1.1rem;
-            color: #6B7280;
-            line-height: 1.7;
-            margin-bottom: 40px;
-        }
-
-        .mantra {
-            font-size: 1.25rem;
-            color: #EA580C;
-            margin-bottom: 10px;
-            font-weight: 500;
-        }
-
-        .mantra-translation {
-            font-size: 0.9rem;
-            color: #9CA3AF;
-            font-style: italic;
-        }
-
-        .divider {
-            width: 60px;
-            height: 3px;
-            background: linear-gradient(90deg, #F97316, #EA580C);
-            margin: 30px auto;
-            border-radius: 2px;
-        }
-
-        .contact-text {
-            font-size: 0.95rem;
-            color: #6B7280;
-            margin-top: 30px;
-        }
-
-        .contact-text a {
-            color: #EA580C;
-            text-decoration: none;
-            font-weight: 500;
-        }
-
-        .contact-text a:hover {
-            text-decoration: underline;
-        }
-
-        @media (max-width: 480px) {
-            .maintenance-container {
-                padding: 40px 25px;
-            }
-
-            .title {
-                font-size: 1.5rem;
-            }
-
-            .message {
-                font-size: 1.4rem;
-            }
-
-            .logo {
-                width: 100px;
-                height: 100px;
-            }
-        }
-    </style>
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ReligiousOrganization",
+        "name": "Gayatri Gyan Mandir",
+        "alternateName": "GGM Itasca",
+        "url": "https://ggmexpansion.org",
+        "logo": "https://ggmexpansion.org/images/logo.png",
+        "description": "A Hindu temple and spiritual center in Itasca, Illinois, part of the All World Gayatri Pariwar. Currently running an expansion campaign to build a 16,000 sq. ft. facility.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Itasca",
+            "addressRegion": "IL",
+            "addressCountry": "US"
+        },
+        "parentOrganization": {
+            "@type": "Organization",
+            "name": "All World Gayatri Pariwar",
+            "url": "https://www.awgp.org"
+        },
+        "sameAs": [
+            "https://gayatrigyanmandir.org"
+        ],
+        "foundingDate": "1990",
+        "nonprofitStatus": "Nonprofit501c3"
+    }
+    </script>
 </head>
 <body>
-    <div class="maintenance-container">
-        <div class="logo">
-            <img src="images/logo.png" alt="Gayatri Gyan Mandir Logo">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <img src="images/logo.png" alt="Gayatri Gyan Mandir Logo" class="logo-img">
+                <span class="logo-text">Gayatri Gyan Mandir</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#mission">Mission</a></li>
+                <li><a href="#project">Expansion</a></li>
+                <li><a href="#contribute">Contribute</a></li>
+                <li><a href="donate-items.html">Donate Items</a></li>
+            </ul>
+            <a href="https://app.gayatrigyanmandir.org/donate/index" target="_blank" rel="noopener noreferrer" class="nav-cta">Donate Now</a>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
+    </nav>
 
-        <h1 class="title">Gayatri Gyan Mandir</h1>
-        <p class="subtitle">Itasca, Illinois</p>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <!-- Temple Illustration -->
+            <div class="hero-visual">
+                <svg class="temple-illustration" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <!-- Gradient for fade from bottom up -->
+                        <linearGradient id="fadeUp" x1="0%" y1="100%" x2="0%" y2="0%">
+                            <stop offset="0%" stop-color="white" stop-opacity="0"/>
+                            <stop offset="40%" stop-color="white" stop-opacity="1"/>
+                        </linearGradient>
+                        <mask id="fadeMask">
+                            <rect x="0" y="0" width="400" height="300" fill="url(#fadeUp)"/>
+                        </mask>
+                    </defs>
+                    <g mask="url(#fadeMask)">
+                        <!-- Temple Base -->
+                        <rect x="100" y="220" width="200" height="60" fill="#E55A1F" rx="4"/>
+                        <!-- Temple Steps -->
+                        <rect x="80" y="260" width="240" height="20" fill="#FF6B2C" rx="2"/>
+                        <rect x="60" y="270" width="280" height="15" fill="#FF8F5C" rx="2"/>
+                        <!-- Main Temple Body -->
+                        <rect x="120" y="120" width="160" height="100" fill="#E55A1F" rx="4"/>
+                        <!-- Temple Pillars -->
+                        <rect x="130" y="140" width="15" height="80" fill="#FF6B2C" rx="2"/>
+                        <rect x="160" y="140" width="15" height="80" fill="#FF6B2C" rx="2"/>
+                        <rect x="225" y="140" width="15" height="80" fill="#FF6B2C" rx="2"/>
+                        <rect x="255" y="140" width="15" height="80" fill="#FF6B2C" rx="2"/>
+                        <!-- Temple Door -->
+                        <rect x="175" y="160" width="50" height="60" fill="#FFB347" rx="4"/>
+                        <circle cx="200" cy="190" r="4" fill="#FCD34D"/>
+                        <!-- Temple Dome/Shikhara -->
+                        <path d="M200 20 L260 120 L140 120 Z" fill="#E55A1F"/>
+                        <path d="M200 40 L245 110 L155 110 Z" fill="#FF6B2C"/>
+                        <!-- Kalash (top) -->
+                        <ellipse cx="200" cy="25" rx="10" ry="8" fill="#FFD700"/>
+                        <rect x="197" y="12" width="6" height="13" fill="#FFD700"/>
+                        <circle cx="200" cy="8" r="5" fill="#FFD700"/>
+                        <!-- Om Symbol -->
+                        <text x="200" y="95" text-anchor="middle" fill="#FFD700" font-size="24" font-family="serif">ॐ</text>
+                        <!-- Decorative flags -->
+                        <path d="M140 120 L130 100 L145 105 Z" fill="#DC2626"/>
+                        <path d="M260 120 L270 100 L255 105 Z" fill="#F97316"/>
+                        <!-- Diyas (oil lamps) -->
+                        <ellipse cx="90" cy="255" rx="12" ry="6" fill="#FFD700"/>
+                        <path d="M90 250 Q95 240 90 235 Q85 240 90 250" fill="#FCD34D"/>
+                        <ellipse cx="310" cy="255" rx="12" ry="6" fill="#FFD700"/>
+                        <path d="M310 250 Q315 240 310 235 Q305 240 310 250" fill="#FCD34D"/>
+                    </g>
+                </svg>
+            </div>
 
-        <div class="icon-container">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z" />
-            </svg>
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="title-line">Building a Sacred Space</span>
+                    <span class="title-line highlight highlight-circle">
+                        For Generations to Come
+                        <svg class="hand-drawn-circle" viewBox="0 0 500 100" preserveAspectRatio="none">
+                            <path class="circle-path" d="M 480,68
+                                Q 50,90 20,50
+                                Q 15,15 250,10
+                                Q 485,12 490,50
+                                Q 488,75 460,38"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2.5"
+                                stroke-linecap="round"/>
+                        </svg>
+                    </span>
+                </h1>
+                <p class="hero-description">
+                    Join us in creating a sanctuary for spiritual growth, community service, and the preservation of divine Indian culture. Together, we build not just a temple, but a legacy.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">16,000</span>
+                        <span class="stat-label">Sq. Ft.</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">260</span>
+                        <span class="stat-label">Capacity</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">5x</span>
+                        <span class="stat-label">Larger</span>
+                    </div>
+                </div>
+                <div class="hero-cta">
+                    <a href="https://app.gayatrigyanmandir.org/donate/index" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                        <span>Support This Vision</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                    <a href="#project" class="btn btn-secondary">Learn More</a>
+                </div>
+                <p class="hero-note">Tax-deductible • Part of All World Gayatri Pariwar • Itasca, Illinois</p>
+            </div>
         </div>
+    </section>
 
-        <h2 class="message">We're Making Improvements</h2>
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our Foundation</span>
+                <h2 class="section-title">Rooted in Divine Wisdom</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-card founders">
+                    <div class="card-glow"></div>
+                    <div class="founders-images">
+                        <div class="founder-circle">
+                            <img src="images/guruji.jpeg" alt="Pandit Shriram Sharma Acharya" class="founder-img">
+                        </div>
+                        <div class="founder-circle">
+                            <img src="images/mataji.jpeg" alt="Mata Bhagwati Devi Sharma" class="founder-img">
+                        </div>
+                    </div>
+                    <h3>Founded on Sacred Principles</h3>
+                    <p>Gayatri Gyan Mandir stands on the timeless teachings of <strong>Pandit Shriram Sharma Acharya</strong> and <strong>Mata Bhagwati Devi</strong>, who dedicated their lives to spiritual awakening and social transformation.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">🙏</div>
+                    <h3>More Than a Temple</h3>
+                    <p>We are a living center for spiritual practice, community service, and the dissemination of ancient wisdom in the modern world.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">🔬</div>
+                    <h3>Science Meets Spirituality</h3>
+                    <p>Bridging the gap between scientific inquiry and spiritual truth, demonstrating how ancient wisdom aligns with modern understanding.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">🌍</div>
+                    <h3>Global Movement</h3>
+                    <p>Part of the worldwide Gayatri Pariwar family, united in the mission of personal transformation and societal upliftment.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">🙌</div>
+                    <h3>Seva & Service</h3>
+                    <p>Selfless service to humanity through education, healthcare initiatives, and community support programs that uplift the underprivileged.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <p class="description">
-            Our website is currently undergoing scheduled maintenance.
-            We're working hard to bring you a better experience and will be back shortly.
-        </p>
+    <!-- Mission Section -->
+    <section id="mission" class="section mission">
+        <div class="container">
+            <div class="section-header center">
+                <span class="section-tag">All World Gayatri Pariwar</span>
+                <h2 class="section-title">Our Sacred Mission</h2>
+                <p class="section-subtitle">Guided by the Gayatri Mantra, we work towards the spiritual elevation of humanity</p>
+            </div>
+            <div class="mission-grid">
+                <div class="mission-card">
+                    <div class="mission-number">01</div>
+                    <h3>Spiritual Awakening</h3>
+                    <p>Spreading the practice of Gayatri Sadhana and Yagya to purify minds, bodies, and the environment.</p>
+                </div>
+                <div class="mission-card">
+                    <div class="mission-number">02</div>
+                    <h3>Thought Revolution</h3>
+                    <p>Vichar Kranti - transforming society through the power of righteous thinking and noble ideals.</p>
+                </div>
+                <div class="mission-card">
+                    <div class="mission-number">03</div>
+                    <h3>Cultural Preservation</h3>
+                    <p>Keeping alive the rich traditions, festivals, and wisdom of ancient Indian civilization.</p>
+                </div>
+                <div class="mission-card">
+                    <div class="mission-number">04</div>
+                    <h3>Community Service</h3>
+                    <p>Selfless service to humanity - education, healthcare, and support for the underprivileged.</p>
+                </div>
+                <div class="mission-card">
+                    <div class="mission-number">05</div>
+                    <h3>Youth Empowerment</h3>
+                    <p>Nurturing the next generation with values, discipline, and a sense of purpose.</p>
+                </div>
+                <div class="mission-card">
+                    <div class="mission-number">06</div>
+                    <h3>Scientific Spirituality</h3>
+                    <p>Demonstrating the harmony between scientific truth and spiritual wisdom.</p>
+                </div>
+            </div>
+            <div class="mantra-section">
+                <div class="mantra-glow"></div>
+                <p class="mantra-sanskrit">ॐ भूर्भुवः स्वः तत्सवितुर्वरेण्यं भर्गो देवस्य धीमहि धियो यो नः प्रचोदयात्</p>
+                <p class="mantra-translation">"We meditate on the divine light of the Supreme Being; may it illuminate our intellect."</p>
+            </div>
+        </div>
+    </section>
 
-        <div class="divider"></div>
+    <!-- Project Section -->
+    <section id="project" class="section project">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Expansion Project</span>
+                <h2 class="section-title">A Vision Taking Shape</h2>
+            </div>
 
-        <p class="mantra">Om Bhur Bhuvah Svah</p>
-        <p class="mantra-translation">"May the divine light guide your path"</p>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker active"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Now</span>
+                        <h4>Planning & Fundraising</h4>
+                    </div>
+                </div>
+                <div class="timeline-line"></div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">June 2026</span>
+                        <h4>Construction Begins</h4>
+                    </div>
+                </div>
+                <div class="timeline-line"></div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">June 2028</span>
+                        <h4>Grand Opening</h4>
+                    </div>
+                </div>
+            </div>
 
-        <p class="contact-text">
-            For urgent inquiries, please visit<br>
-            <a href="https://gayatrigyanmandir.org" target="_blank" rel="noopener noreferrer">gayatrigyanmandir.org</a>
-        </p>
-    </div>
+            <div class="features-showcase">
+                <div class="feature-main">
+                    <div class="feature-visual">
+                        <div class="building-illustration">
+                            <div class="building-glow"></div>
+                            <div class="building-stats">
+                                <div class="building-stat">
+                                    <span class="stat-value">16,000</span>
+                                    <span class="stat-desc">Square Feet</span>
+                                </div>
+                                <div class="building-stat">
+                                    <span class="stat-value">260</span>
+                                    <span class="stat-desc">People Capacity</span>
+                                </div>
+                                <div class="building-stat">
+                                    <span class="stat-value">130</span>
+                                    <span class="stat-desc">Parking Spaces</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🕉️</div>
+                    <h4>Spacious Mandir Hall</h4>
+                    <p>Grand hall for Aartis, Sabhas, and spiritual gatherings</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📖</div>
+                    <h4>Bal Sanskar Rooms and Bathrooms</h4>
+                    <p>Dedicated spaces for children's programs with facilities</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔥</div>
+                    <h4>Yagya Room</h4>
+                    <p>Dedicated space for sacred fire ceremonies</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🧘</div>
+                    <h4>Meditation Garden</h4>
+                    <p>Serene outdoor space for contemplation</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👶</div>
+                    <h4>Children's Areas</h4>
+                    <p>Play and activity spaces for young ones</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎤</div>
+                    <h4>Assembly Room</h4>
+                    <p>Multi-purpose hall with stage for events</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🍽️</div>
+                    <h4>Kitchen & Dining</h4>
+                    <p>Full kitchen and prasad distribution area</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📚</div>
+                    <h4>Library</h4>
+                    <p>Collection of spiritual texts and resources</p>
+                </div>
+            </div>
+
+            <div class="additional-features">
+                <p>Also includes: ADA Accessible with Elevators • Priest & Guest Rooms • Office Space • Storage • Separate Coat & Shoe Areas</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contribute Section -->
+    <section id="contribute" class="section contribute">
+        <div class="container">
+            <div class="contribute-wrapper">
+                <div class="contribute-content">
+                    <span class="section-tag">Be Part of History</span>
+                    <h2 class="section-title">Your Mandir. Your Blessings. Your Legacy.</h2>
+                    <p class="contribute-text">Every contribution, no matter the size, brings us closer to realizing this sacred vision. Your generosity today will bless generations tomorrow.</p>
+
+                    <div class="contribute-ways">
+                        <div class="contribute-way">
+                            <div class="way-icon">💝</div>
+                            <div class="way-content">
+                                <h4>Donate Generously</h4>
+                                <p>One-time gifts of any amount make a difference</p>
+                            </div>
+                        </div>
+                        <div class="contribute-way">
+                            <div class="way-icon">📅</div>
+                            <div class="way-content">
+                                <h4>Monthly Pledge</h4>
+                                <p>Commit to $21, $51, $101 or more monthly</p>
+                            </div>
+                        </div>
+                        <div class="contribute-way">
+                            <div class="way-icon">🤝</div>
+                            <div class="way-content">
+                                <h4>Volunteer</h4>
+                                <p>Offer your time, skills, and expertise</p>
+                            </div>
+                        </div>
+                        <div class="contribute-way">
+                            <div class="way-icon">📢</div>
+                            <div class="way-content">
+                                <h4>Spread the Word</h4>
+                                <p>Share with friends, family, and community</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="donate-card">
+                    <div class="donate-card-glow"></div>
+                    <div class="donate-card-icon">🙏</div>
+                    <h3>Make a Donation</h3>
+                    <p class="donate-card-text">Your contribution helps build a sacred space for spiritual growth and community service.</p>
+
+                    <div class="suggested-amounts">
+                        <p class="suggested-label">Suggested monthly pledges:</p>
+                        <div class="amount-tags">
+                            <span class="amount-tag">$21</span>
+                            <span class="amount-tag">$51</span>
+                            <span class="amount-tag">$101</span>
+                            <span class="amount-tag">$251</span>
+                        </div>
+                    </div>
+
+                    <a href="https://app.gayatrigyanmandir.org/donate/index" target="_blank" rel="noopener noreferrer" class="donate-btn">
+                        <span>Donate Now</span>
+                    </a>
+                    <p class="donate-note">Secure payment. Tax-deductible donation.</p>
+                    <p class="tax-info">Gayatri Gyan Mandir is a 501(c)(3) tax-exempt organization.<br>EIN: 36-4228448</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pledge Section -->
+    <section class="section pledge-section">
+        <div class="container">
+            <div class="pledge-banner">
+                <div class="pledge-banner-content">
+                    <div class="pledge-banner-icon">🤝</div>
+                    <div class="pledge-banner-text">
+                        <h3>Pledge to Help Build Our Mandir</h3>
+                        <p>Commit your time, resources & skills • Help us raise funds • Use your company's donation match program • Share ideas to support this expansion</p>
+                    </div>
+                </div>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdRYGt8UrHeXYN23HnZYAPma0MJ6WwvI7E7ZVT12mGck7450g/viewform" target="_blank" rel="noopener noreferrer" class="pledge-banner-btn">
+                    Fill Pledge Form
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <div class="footer-logo">
+                        <img src="images/logo.png" alt="Gayatri Gyan Mandir Logo" class="logo-img footer-logo-img">
+                        <span class="logo-text">Gayatri Gyan Mandir</span>
+                    </div>
+                    <p class="footer-tagline">A sacred space for spiritual growth and community service in Itasca, Illinois.</p>
+                    <p class="footer-address">Itasca, IL • Part of All World Gayatri Pariwar</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#mission">Our Mission</a></li>
+                            <li><a href="#project">Expansion Project</a></li>
+                            <li><a href="#contribute">Contribute</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="privacy.html">Privacy Policy</a></li>
+                            <li><a href="terms.html">Terms of Use</a></li>
+                            <li><a href="https://gayatrigyanmandir.org/contact/" target="_blank" rel="noopener noreferrer">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Gayatri Gyan Mandir, Itasca IL. All rights reserved.</p>
+                <p class="tax-exempt">501(c)(3) Tax-Exempt Organization | EIN: 36-4228448</p>
+                <p class="blessing">🙏 May the divine light guide your path 🙏</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
